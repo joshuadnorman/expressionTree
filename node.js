@@ -1,5 +1,8 @@
 class Node{
     constructor(operator,value,left,right){
+        if ((!value) && (!operator)){
+            throw new Error("Value or Operator required")
+        }
         if ((!left)&&(!right)&&(!value)){
             // This would mean we have passed just an operator as a leaf mode 
             // which would cause a faulty arithmetic expression according

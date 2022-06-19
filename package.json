@@ -2,10 +2,10 @@
   "name": "expressiontree",
   "version": "1.0.0",
   "description": "Build Arithmetic tree",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "test": "jest",
-    "start": "node index.js"
+    "start": "node index"
   },
   "author": "Joshua Norman",
   "license": "ISC",
