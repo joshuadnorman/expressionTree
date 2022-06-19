@@ -1,15 +1,23 @@
 {
   "name": "expressiontree",
   "version": "1.0.0",
-  "description": "",
+  "description": "Build Arithmetic tree",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start":"node index.js"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Joshua Norman",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuadnorman/expressionTree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshuadnorman/expressionTree/issues"
+  },
+  "homepage": "https://github.com/joshuadnorman/expressionTree#readme"
 }

@@ -17,10 +17,9 @@ new Node(
       new Node("", 5, null, null)
     )
   ),
-  new Node("", 6.0, null, null)
+  new Node("", 6, null, null)
 )
 );
-
 
 try {
     assert.strictEqual("((7 + ((3 - 2) x 5)) ÷ 6)", tree.toString());
