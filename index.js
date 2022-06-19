@@ -79,6 +79,21 @@ class ExpressionTree extends Tree{
         super(data)
         this.root = data
     }
+
+    result = function(node=this.root){
+    switch (node.operator) {
+      case "+":
+        return this.result(node.left) + this.result(node.right);
+      case "-":
+        return this.result(node.left) - this.result(node.right);
+      case "x":
+        return this.result(node.left) * this.result(node.right);
+      case "÷":
+        return this.result(node.left) / this.result(node.right);
+      default:
+        return node.value;
+    }
+    }
 }
 
 const tree = new ExpressionTree(
@@ -101,6 +116,6 @@ new Node(
 );
 
 
-console.log(tree.toString())
+console.log(tree.result())
 //assert.strictEqual("((7 + ((3 - 2) x 5)) ÷ 6)", tree.toString());
 //assert.strictEqual(2, tree.result());
