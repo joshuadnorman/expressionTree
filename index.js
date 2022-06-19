@@ -73,7 +73,15 @@ class Tree{
 }
 };
 
-const tree = new Tree(
+class ExpressionTree extends Tree{
+
+    constructor(data){
+        super(data)
+        this.root = data
+    }
+}
+
+const tree = new ExpressionTree(
 new Node(
   "÷",
   null,
