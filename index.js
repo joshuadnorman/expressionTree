@@ -1,4 +1,4 @@
-onst assert = require("assert");
+const assert = require("assert");
 
 const Node = (operator, value, left, right) => {
   const result = function () {
